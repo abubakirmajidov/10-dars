@@ -23,8 +23,8 @@ function updateUI(data) {
 
   const clone = template.content.cloneNode(true);
   const image = clone.querySelector("img");
-  image.src = data[0].flags.png;
-  image.svg = data[0].flags.svg;
+  image.src = data[0].flags.svg;
+  image.alt = data[0].flags.alt;
 
   div.appendChild(clone);
   result.innerHTML = `
